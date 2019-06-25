@@ -1,11 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}                                  
+\usepackage{enumitem, tasks}
+\usepackage{amsmath,amssymb,amsthm, amsfonts}
 
+\begin{document}
+%<*Question>
+Bestäm en ekvation för tangenten och normalen till kurvan
 
-
-
-Bestam en ekvation for tangenten och normalen till kurvan
-
-\begin{enumerate}
-\item $ y = \frac{2x^{2/3}+2x^{3/4}}{\sqrt{x}} $ i punkten $ (1,5) $.
+\begin{enumerate}[label=\alph*.\quad]
+\item $ y = \frac{3x^{2/3}+2x^{3/4}}{\sqrt{x}} $ i punkten $ (1,5) $.
 \item $ y = \frac{x^4-16}{x^2+4} $ i punkten $ (3,5) $.
 \end{enumerate}
-Tips a:Forenkla forst. Tips b: Forlang med namnarens konjugat. 
+Tips a: Förenkla först. Tips b: Förläng med nämnarens konjugat.
+%</Question>
+
+%<*Ans>
+\begin{tasks}[counter-format={tsk[a].}](1)
+\task Tangent: $ y = x+4 $ , Normal: $ y = 6-x $.
+\task Tangent: $ y = 6x-13$, Normal: $ x+6y =33$.
+\end{tasks}
+%</Ans>
+
+\end{document}
+ 

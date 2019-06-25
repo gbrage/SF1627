@@ -1,0 +1,23 @@
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}                                   
+\usepackage{enumitem, tasks}
+\usepackage{amsmath,amssymb,amsthm, amsfonts}
+\usepackage{catchfilebetweentags}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+
+
+\definecolor{light-gray}{gray}{0.90}
+
+\titleformat{\section}
+  {\normalfont\small}
+  {\thesection}
+  {1em}
+  {#1}
+  [{\color{light-gray}\titlerule[0.8pt]}]
+
+\settasks{
+counter-format={tsk[a].} ,
+item-indent = 0pt
+}

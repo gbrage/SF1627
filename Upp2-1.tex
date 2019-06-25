@@ -1,13 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}                                  
+\usepackage{enumitem, tasks}
+\usepackage{amsmath,amssymb,amsthm, amsfonts}
 
-
-
-
+\begin{document}
+%<*Question>
 Beräkna derivatan $ f'(x) $ då funktionen $ f(x) $ ges av 
 
-\begin{enumerate}
-\item $ \frac{x^2-4}{x-2} $
-\item $ (2x+1)^{3/2}(x-1)\sqrt{1+2x} $
-\item $ 2^{-7x}4^{2x}8^x $
-\item $ \ln\frac{1+x}{2+x}+\ln\frac{2+x}{1+x} $
-\end{enumerate}
-Tips a-d:Förenkla först.
+\begin{tasks}[counter-format={tsk[a].}](2)
+\task $ \frac{x^2-4}{x-2} $
+\task $ (2x+1)^{3/2}(x-1)\sqrt{1+2x} $
+\task $ 2^{-7x}4^{2x}8^x $
+\task $ \ln\left(\frac{1+x}{2+x}\right)+\ln\left(\frac{2+x}{1+x}\right) $
+\end{tasks}
+Tips: Förenkla först.
+%</Question>
+
+%<*Ans>
+\begin{tasks}[counter-format={tsk[a].}](4)
+\task $ 1 $
+\task $ 12x^2-3 $
+\task $ 0 $
+\task $ 0 $
+\end{tasks}
+%</Ans>
+
+
+\end{document}
